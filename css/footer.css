@@ -1,0 +1,109 @@
+.footer {
+  padding: auto;
+  padding-bottom: 12px;
+  display: flex;
+  background-color: gray;
+  box-sizing: border-box;
+}
+.footer-1 {
+  margin: 20px;
+  word-break: normal;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.footer-1 .footer-sub {
+  margin: 4px;
+  padding: 0;
+}
+.footer-1 .footer-sub span {
+  font-weight: bold;
+}
+.footer-1 .footer-sub h5 {
+  margin: 0;
+  padding: 0;
+  width: 55%;
+  color: blue;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer-sub a{
+  text-decoration: none;
+}
+.footer-2 {
+  display: flex;
+  flex-direction: column;
+}
+.footer-2 .footer-3 {
+  padding: 10px 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-2 .footer-3 .mod {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.rel-app {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.mod p {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.mod a {
+  text-decoration: none;
+  line-height: 24px;
+  color: black;
+}
+.mod a:hover {
+  color: brown;
+}
+.rel-app p {
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.logo-apply {
+  display: flex;
+  flex-direction: row;
+}
+.logo-app {
+  margin: 0;
+  margin-right: 10px;
+}
+.logo-app a img {
+  width: 28px;
+  height: 28px;
+}
+.footer-sub a {
+  color: darkblue;
+}
+.footer-sub a:hover {
+  color: brown;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-1 {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-3 {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

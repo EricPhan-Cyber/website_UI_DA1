@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Dang-nhap</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand __logo" href="../index.html"
+            ><img src="../images/logo.jpg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html"
+                  ><span class="__title">Trang chủ</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/nhadat.html"
+                  ><span class="__title">Nhà đất</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/duan.html"
+                  ><span class="__title">Dự án</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/kientruc.html"
+                  ><span class="__title">Kiến trúc</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/noithat.html"
+                  ><span class="__title">Nội thất</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><span class="__title">Tài khoản</span></a
+                >
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="../view/login.html"
+                    ><span class="__title">Đăng nhập</span></a
+                  >
+                  <a class="dropdown-item" href="../view/register.html"
+                    ><span class="__title">Đăng ký</span></a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/dangtin.html"
+                  ><span class="__title">Đăng tin</span></a
+                >
+              </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0" name="search">
+              <input
+                class="form-control me-sm-2"
+                type="text"
+                id="__search"
+                name="__search"
+                placeholder="Tìm kiếm tại đây!"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+                id="__searchbtn"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main -->
+      <div class="__login">
+        <div class="login-box">
+          <h2>Đăng nhập</h2>
+          <form>
+            <div class="user-box">
+              <input id="iptext" type="text" name="username" required />
+              <label>Tên đăng nhập</label>
+            </div>
+            <div class="user-box">
+              <input id="iptext" type="password" name="password" required />
+              <label>Mật khẩu</label>
+            </div>
+            <div class="saveuser">
+              <div class="saveuser-1">
+                <input type="checkbox" name="saveus" id="saveus" />
+                <label for="saveus">Nhớ tài khoản</label>
+              </div>
+              <div class="forgotpass"><a href="#">Quên mật khẩu?</a></div>
+            </div>
+            <div class="sub">
+              <input type="submit" id="submit" value="Đăng nhập" />
+            </div>
+          </form>
+          <div class="end">
+            <span
+              >Bạn chưa là thành viên? Hãy
+              <a href="../view/register.html">đăng ký</a></span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer-1">
+          <div class="footer-sub"><h5>BATDONGSANVKU</h5></div>
+          <div class="footer-sub"><span>Hotline:</span> (+84) 123456789</div>
+          <div class="footer-sub">
+            <span>Trụ sở chính:</span> P.Hòa Thuận Tây, Q.Hải Châu, TP.Đà Nẵng
+          </div>
+          <div class="footer-sub">
+            <span>Email: </span>
+            <a href="mailto:hoangpd.21it@vku.udn.vn">hoangpd.21it@vku.udn.vn</a>
+          </div>
+          <div class="footer-sub">
+            <span>Bản quyền thuộc &copy; batdongsanvku</span>
+          </div>
+        </div>
+        <div class="footer-2">
+          <div class="footer-3">
+            <div class="mod">
+              <p>Về chúng tôi</p>
+              <a href="#">Giới thiệu</a>
+              <a href="#">Điều khoản sử dụng</a>
+              <a href="#">Liên hệ</a>
+              <a href="#">Quy chế hoạt động</a>
+              <a href="#">Mua hàng an toàn</a>
+            </div>
+            <div class="mod">
+              <p>Hỗ trợ</p>
+              <a href="#">Quảng cáo</a>
+              <a href="#">Tin tức và khuyến mãi</a>
+              <a href="#">Hỗ trợ đăng tin</a>
+              <a href="#">Hướng dẫn thanh toán</a>
+              <a href="#">Câu hỏi thường gặp</a>
+            </div>
+            <div class="mod">
+              <p>Thông tin mua bán</p>
+              <a href="#">Giá nhà đất hiện tại</a>
+              <a href="#">Môi giới bất động sản</a>
+            </div>
+          </div>
+          <div class="rel-app">
+            <div><p>Ứng dụng kết nối</p></div>
+            <div class="logo-apply">
+              <div class="logo-app">
+                <a href="https://www.facebook.com/"
+                  ><img src="../images/600px-Facebook-icon-1.png" alt=""
+                /></a>
+              </div>
+              <div class="logo-app">
+                <a href="https://accounts.google.com/"
+                  ><img src="../images/tải xuống.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../javascript/index.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

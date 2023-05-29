@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/spchitiet.css" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cho-thue-can-ho-gia-re</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand __logo" href="../index.html"
+            ><img src="../images/logo.jpg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html"
+                  ><span class="__title">Trang chủ</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/nhadat.html"
+                  ><span class="__title">Nhà đất</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/duan.html"
+                  ><span class="__title">Dự án</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/kientruc.html"
+                  ><span class="__title">Kiến trúc</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/noithat.html"
+                  ><span class="__title">Nội thất</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><span class="__title">Tài khoản</span></a
+                >
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="../view/login.html"
+                    ><span class="__title">Đăng nhập</span></a
+                  >
+                  <a class="dropdown-item" href="../view/register.html"
+                    ><span class="__title">Đăng ký</span></a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/dangtin.html"
+                  ><span class="__title">Đăng tin</span></a
+                >
+              </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0" name="search">
+              <input
+                class="form-control me-sm-2"
+                type="text"
+                id="__search"
+                name="__search"
+                placeholder="Tìm kiếm tại đây!"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+                id="__searchbtn"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main -->
+      <div class="__main container">
+        <div>
+          <h4>
+            Cho thuê căn hộ giá rẻ 20tr/th LH: 0123456789 để xem trực tiếp và
+            trao đổi cùng chủ nhà
+          </h4>
+        </div>
+        <div class="diadiem">Địa điểm: Quận 9, thành phố Hồ Chí Minh.</div>
+        <div class="__contain">
+          <div class="ttmt">
+            <div class="__imagesshow">
+              <div class="mySlides __fade">
+                <img class="img-fluid" src="../images/home/1.jpg" alt="" />
+              </div>
+              <div class="mySlides __fade">
+                <img class="img-fluid" src="../images/home/2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="_pre_next">
+              <a class="prev" onclick="plusSlides(-1)"
+                ><i class="fas fa-angle-left"></i
+              ></a>
+              <a class="next" onclick="plusSlides(1)"
+                ><i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="__imgsm">
+            <span class="__img" onclick="currentSlide(1)"
+              ><img src="../images/home/1.jpg" alt=""
+            /></span>
+            <span class="__img" onclick="currentSlide(2)"
+              ><img src="../images/home/2.jpg" alt=""
+            /></span>
+          </div>
+        </div>
+        <div class="thongtinmota">
+          <h5>Thông tin mô tả</h5>
+          <div class="thongtinbds">
+            Thông tin căn hộ: <br />
+            Số tầng: 3 tầng <br />
+            Diện tích: 250m² <br />
+            Mức giá: 20 triệu/tháng <br />
+            Nội thất bàn giao: Máy lạnh, máy nước nóng, cửa gỗ lõi thép chống
+            cháy, kệ bếp trên dưới, chậu rửa... <br />
+          </div>
+          <div class="thongtinbds">
+            Tiện ích: <br />
+            - Công viên ven sông, hồ bơi đẹp, sân chơi cho trẻ em, BBQ thoáng
+            mát. Tầm nhìn hướng ra sông thoáng mát, môi trường xung quanh yên
+            tĩnh. <br />
+            An ninh cao 24/24 xung quanh bởi camera. <br />
+            - Gần trung tâm thương mại, văn phòng, nhà trẻ, trường học quốc tế,
+            siêu thị, cửa hàng tiện lợi, nhà thuốc, bệnh viện,.. <br />
+          </div>
+          <div class="thongtinbds">
+            Ngoài ra còn được hỗ trợ làm mọi thủ tục: <br />
+            - Thủ tục sổ đỏ. <br />
+            - Thủ tục tạm trú nhanh nhất. <br />
+            - Thủ tục vận chuyển. <br />
+            - Thủ tục thi công lắp đặt. <br />
+            Liên hệ: 0123456789
+          </div>
+        </div>
+        <div class="__map">
+          <h5>Xem bản đồ</h5>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125400.36841127614!2d106.7487343527785!3d10.829554199615956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175275b3a69ce75%3A0xfc7063168fc12eaf!2zUXXhuq1uIDksIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1655877506817!5m2!1svi!2s"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              id="__map"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer-1">
+          <div class="footer-sub"><h5>BATDONGSANVKU</h5></div>
+          <div class="footer-sub"><span>Hotline:</span> (+84) 123456789</div>
+          <div class="footer-sub">
+            <span>Trụ sở chính:</span> P.Hòa Thuận Tây, Q.Hải Châu, TP.Đà Nẵng
+          </div>
+          <div class="footer-sub">
+            <span>Email: </span>
+            <a href="mailto:hoangpd.21it@vku.udn.vn">hoangpd.21it@vku.udn.vn</a>
+          </div>
+          <div class="footer-sub">
+            <span>Bản quyền thuộc &copy; batdongsanvku</span>
+          </div>
+        </div>
+        <div class="footer-2">
+          <div class="footer-3">
+            <div class="mod">
+              <p>Về chúng tôi</p>
+              <a href="#">Giới thiệu</a>
+              <a href="#">Điều khoản sử dụng</a>
+              <a href="#">Liên hệ</a>
+              <a href="#">Quy chế hoạt động</a>
+              <a href="#">Mua hàng an toàn</a>
+            </div>
+            <div class="mod">
+              <p>Hỗ trợ</p>
+              <a href="#">Quảng cáo</a>
+              <a href="#">Tin tức và khuyến mãi</a>
+              <a href="#">Hỗ trợ đăng tin</a>
+              <a href="#">Hướng dẫn thanh toán</a>
+              <a href="#">Câu hỏi thường gặp</a>
+            </div>
+            <div class="mod">
+              <p>Thông tin mua bán</p>
+              <a href="#">Giá nhà đất hiện tại</a>
+              <a href="#">Môi giới bất động sản</a>
+            </div>
+          </div>
+          <div class="rel-app">
+            <div><p>Ứng dụng kết nối</p></div>
+            <div class="logo-apply">
+              <div class="logo-app">
+                <a href="https://www.facebook.com/"
+                  ><img src="../images/600px-Facebook-icon-1.png" alt=""
+                /></a>
+              </div>
+              <div class="logo-app">
+                <a href="https://accounts.google.com/"
+                  ><img src="../images/tải xuống.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

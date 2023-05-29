@@ -1,0 +1,156 @@
+.__main {
+  margin: 20px;
+}
+.__main .__contain {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.__contain .diadiem {
+  padding: 0;
+}
+.__contain .ttmt {
+  width: 100%;
+  display: block;
+  margin: 18px 0;
+  position: relative;
+}
+.__imagesshow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.__imagesshow div img {
+  width: 900px;
+  height: 560px;
+  object-fit: cover;
+  background-size: contain;
+}
+.__imgsm {
+  text-align: center;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: darkgray;
+}
+.__imgsm {
+  display: block;
+  box-sizing: border-box;
+}
+.__img {
+  cursor: pointer;
+  display: inline-block;
+}
+.__img img {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  background-size: contain;
+}
+.prev,
+.next i {
+  color: black;
+}
+.active,
+.__img:hover {
+  outline: none;
+  border: 2px solid black;
+}
+/* animation */
+.__fade {
+  animation: fade 0.25s;
+}
+@keyframes fade {
+  from {
+    transform: translateX(25%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.__main .thongtinmota {
+  margin: 12px 35px;
+  padding: 0;
+}
+.thongtinmota .thongtinbds {
+  margin: 5px 25px;
+  padding: 0;
+}
+.__map div {
+  text-align: center;
+}
+.__map h5 {
+  margin: 10px 35px;
+  padding: 0;
+}
+#__map {
+  width: 900px;
+  height: 300px;
+  border: 2px;
+}
+@media screen and (max-width: 767px) {
+  .__main {
+    margin: auto;
+    padding: auto;
+  }
+  .ttmt div img {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    background-size: contain;
+  }
+  .__main .thongtinmota {
+    margin: auto;
+  }
+  .__map h5{
+    margin: 10px auto;
+  }
+  #__map {
+    width: auto;
+    height: auto;
+    background-size: cover;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .__main {
+    margin: auto;
+    padding: auto;
+  }
+  .ttmt div img {
+    width: 696px;
+    height: 300px;
+    object-fit: cover;
+    background-size: contain;
+  }
+  .__main .thongtinmota {
+    margin: auto;
+  }
+  .__map h5{
+    margin: 10px auto;
+  }
+  #__map {
+    width: 696px;
+    height: 250px;
+    background-size: cover;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,68 @@
+.__main{
+  margin-top: 15px;
+}
+.__container{
+  display: flex;
+  justify-content: center;
+}
+.__content_main {
+  width: 65%;
+}
+.t-title-1 .t-title-2 h3 {
+  margin: 10px 20px;
+}
+.content-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content-1 .content-2 {
+  margin: 10px 0;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+}
+.content-1 .content-2 img {
+  width: 265px;
+  height: 150px;
+}
+.content-1 .content-2 .content-3 {
+  margin: 0;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content-3 .content-4 span {
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+.content-3 .content-5 span {
+  font-style: italic;
+  font-size: 16px;
+  color: rgb(90, 90, 90);
+}
+.content-4 a{
+  text-decoration: none;
+}
+.content-4 a span:hover{
+  color: blue;
+}
+.content-2 .hinhanh a{
+  display: inline-block;
+  overflow: hidden;
+}
+.content-2 .hinhanh a img{
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+.content-2:hover img{
+  transform: scale(1.25);
+}
+@media screen and (max-width: 767px) {
+  .content-1 .content-2{
+    display: flex;
+    flex-direction: column;
+  }
+}

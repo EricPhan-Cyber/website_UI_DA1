@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/dangtin.css" />
+    <title>Dang-tin</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand __logo" href="../index.html"
+            ><img src="../images/logo.jpg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html"
+                  ><span class="__title">Trang chủ</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/nhadat.html"
+                  ><span class="__title">Nhà đất</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/duan.html"
+                  ><span class="__title">Dự án</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/kientruc.html"
+                  ><span class="__title">Kiến trúc</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/noithat.html"
+                  ><span class="__title">Nội thất</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><span class="__title">Tài khoản</span></a
+                >
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="../view/login.html"
+                    ><span class="__title">Đăng nhập</span></a
+                  >
+                  <a class="dropdown-item" href="../view/register.html"
+                    ><span class="__title">Đăng ký</span></a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/dangtin.html"
+                  ><span class="__title">Đăng tin</span></a
+                >
+              </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0" name="search">
+              <input
+                class="form-control me-sm-2"
+                type="text"
+                id="__search"
+                name="__search"
+                placeholder="Tìm kiếm tại đây!"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+                id="__searchbtn"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main -->
+      <div class="__dangtinbds">
+        <div class="__tieude"><h4>Đăng tin rao bán, cho thuê</h4></div>
+        <form>
+          <div class="__dangtin">
+            <div class="__thongtin">
+              <fieldset class="border border-2 rounded-3 p-3">
+                <legend class="float-none w-auto px-3">Thông tin cơ bản</legend>
+                <div class="s-but">
+                  <label>Hình thức</label>
+                  <select name="hinhtuc">
+                    <option value="bán">Bán</option>
+                    <option value="cho thuê">Cho thuê</option>
+                  </select>
+                </div>
+                <div class="loaibds">
+                  <label for="stylebds">Loại bất động sản</label>
+                  <select name="loaibds" id="loai_bds">
+                    <option value="bán căn hộ chung cư">
+                      Bán căn hộ chung cư
+                    </option>
+                    <option value="bán đất">Bán đất</option>
+                    <option value="Bán biệt thự">Bán biệt thự</option>
+                    <option value="bán đất nền dự án">Bán đất nền dự án</option>
+                    <option value="bán nhà riêng">Bán nhà riêng</option>
+                    <option value="bán loại bất động sản khác">
+                      Bán loại bất động sản khác
+                    </option>
+                  </select>
+                </div>
+                <div class="address">
+                  <fieldset class="border rounded-3 p-3">
+                    <legend class="float-none w-auto px-3">Địa chỉ</legend>
+                    <div class="add-main">
+                      <div class="add">
+                        <div class="add1">
+                          <label>Tỉnh, thành phố</label>
+                        </div>
+                        <div class="add2">
+                          <input type="text" name="addrress" required />
+                        </div>
+                      </div>
+                      <div class="add">
+                        <div class="add1">
+                          <label>Huyện, quận</label>
+                        </div>
+                        <div class="add2">
+                          <input type="text" name="huyen-quan" required />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="add-main">
+                      <div class="add">
+                        <div class="add1">
+                          <label>Phường, xã</label>
+                        </div>
+                        <div class="add2">
+                          <input type="text" name="phuong-xa" required />
+                        </div>
+                      </div>
+                      <div class="add">
+                        <div class="add1">
+                          <label>Đường, phố</label>
+                        </div>
+                        <div class="add2">
+                          <input type="text" name="str" required />
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </fieldset>
+            </div>
+            <div class="__thongtin">
+              <fieldset class="border border-2 rounded-3 p-3">
+                <legend class="float-none w-auto px-3">
+                  Thông tin bài đăng
+                </legend>
+                <div class="title">
+                  <div class="title1"><label>Tiêu đề</label></div>
+                  <div class="nametitle">
+                    <input
+                      type="text"
+                      name="title"
+                      required
+                      placeholder="Nhập tên tiêu đề bất động sản của bạn!"
+                    />
+                  </div>
+                </div>
+                <div class="des">
+                  <div class="des1"><label>Mô tả</label></div>
+                  <div class="des2">
+                    <textarea
+                      name="mota"
+                      name="des"
+                      placeholder="Nhập mô tả về bất động sản của bạn!"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="__thongtin">
+              <fieldset class="border border-2 rounded-3 p-3">
+                <legend class="float-none w-auto px-3">
+                  Thông tin bất động sản
+                </legend>
+                <div class="dientich">
+                  <div class="dientich1">
+                    <label>Diện tích</label>
+                  </div>
+                  <div class="dientich2">
+                    <input
+                      type="text"
+                      inputmode="numeric"
+                      name="dientich"
+                      required
+                      placeholder="Nhập diện tích m²"
+                    />
+                  </div>
+                </div>
+                <div class="mucgia">
+                  <div class="gia">
+                    <div class="gia1"><label>Mức giá</label></div>
+                    <div class="gia2">
+                      <input
+                        type="text"
+                        name="gia"
+                        inputmode="numeric"
+                        placeholder="Nhập mức giá"
+                      />
+                    </div>
+                  </div>
+                  <div class="donvi">
+                    <label for="donvi">Đơn vị</label>
+                    <select name="donvi">
+                      <option value="vnd">VND</option>
+                      <option value="$">$</option>
+                      <option value="thỏa thuận">Thỏa thuận</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="giayto">
+                  <div><div class="gtpl">Giấy tờ pháp lý</div></div>
+                  <div>
+                    <input
+                      type="radio"
+                      name="giay_to"
+                      id="giay_to"
+                      value="Sổ đỏ"
+                    />
+                    <label for="giay_to">Sổ đỏ</label>
+                    <input
+                      type="radio"
+                      name="giay_to"
+                      id="giay_to"
+                      value="Hợp đồng mua bán"
+                    />
+                    <label for="giay_to">Hợp đồng mua bán</label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="__thongtin">
+              <fieldset class="border border-2 rounded-3 p-3">
+                <legend class="float-none w-auto px-3">Hình ảnh</legend>
+                <div class="first">
+                  <div>Hãy đăng ảnh để được giao dịch nhanh chóng!</div>
+                  <div>
+                    <input
+                      type="file"
+                      name="choose"
+                      id="imgages"
+                      accept="image/*"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="__thongtin">
+              <fieldset class="border border-2 rounded-3 p-3">
+                <legend class="float-none w-auto px-3">
+                  Thông tin liên hệ
+                </legend>
+                <div class="thongtinlh">
+                  <div class="ttlh">
+                    <div class="ttlh1">
+                      <label>Tên liên hệ</label>
+                    </div>
+                    <div class="ttlh2">
+                      <input
+                        type="text"
+                        name="name"
+                        required
+                        placeholder="Nhập tên"
+                      />
+                    </div>
+                  </div>
+                  <div class="ttlh">
+                    <div class="ttlh1">
+                      <label>Số điện thoại</label>
+                    </div>
+                    <div class="ttlh2">
+                      <input
+                        type="text"
+                        name="phone"
+                        required
+                        placeholder="Nhập số điện thoại"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="youradd">
+                  <label>Địa chỉ</label>
+                  <input
+                    type="text"
+                    required
+                    name="youradd"
+                    placeholder="Nhập địa chỉ"
+                  />
+                </div>
+              </fieldset>
+            </div>
+            <div class="__thongtin">
+              <fieldset class="border border-2 rounded-3 p-3">
+                <legend class="float-none w-auto px-3">
+                  Hình thức đăng tin
+                </legend>
+                <div class="__loaitin">
+                  <div class="_loaitin">
+                    <label>Loại tin</label>
+                    <select name="_tin" id="_tin" onchange="myChoose(this)">
+                      <option value="">-- chọn --</option>
+                      <option value="tin thuong">Tin thường</option>
+                      <option value="tin vip">Tin vip</option>
+                    </select>
+                  </div>
+                  <div class="__dongia">
+                    <label>Đơn giá/ngày</label>
+                    <ul class="_gia">
+                      <li id="tinthuong" value="20000">20 000đ</li>
+                      <li id="tinvip" value="35000">35 000đ</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="__ngaydang">
+                  <div class="_ngaydang">
+                    <label>Số ngày đăng</label>
+                    <input
+                      type="number"
+                      min="1"
+                      name="ngaydang"
+                      id="ngaydang"
+                      onchange="check(this)"
+                      required
+                      value="10"
+                    />
+                  </div>
+                  <div class="_ngaydang">
+                    <label for="">Từ ngày</label>
+                    <input type="date" id="date" />
+                  </div>
+                  <div class="_ngaydang">
+                    <label for="">Tổng tiền</label>
+                    <span id="_tongtien"></span>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="end">
+              <div class="end1"><input type="submit" value="Đăng tin" /></div>
+              <div class="end2">
+                <span
+                  >Bạn chưa là thành viên?
+                  <a href="../view/register.html">Đăng ký ngay</a></span
+                >
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer-1">
+          <div class="footer-sub"><h5>BATDONGSANVKU</h5></div>
+          <div class="footer-sub"><span>Hotline:</span> (+84) 123456789</div>
+          <div class="footer-sub">
+            <span>Trụ sở chính:</span> P.Hòa Thuận Tây, Q.Hải Châu, TP.Đà Nẵng
+          </div>
+          <div class="footer-sub">
+            <span>Email: </span>
+            <a href="mailto:hoangpd.21it@vku.udn.vn">hoangpd.21it@vku.udn.vn</a>
+          </div>
+          <div class="footer-sub">
+            <span>Bản quyền thuộc &copy; batdongsanvku</span>
+          </div>
+        </div>
+        <div class="footer-2">
+          <div class="footer-3">
+            <div class="mod">
+              <p>Về chúng tôi</p>
+              <a href="#">Giới thiệu</a>
+              <a href="#">Điều khoản sử dụng</a>
+              <a href="#">Liên hệ</a>
+              <a href="#">Quy chế hoạt động</a>
+              <a href="#">Mua hàng an toàn</a>
+            </div>
+            <div class="mod">
+              <p>Hỗ trợ</p>
+              <a href="#">Quảng cáo</a>
+              <a href="#">Tin tức và khuyến mãi</a>
+              <a href="#">Hỗ trợ đăng tin</a>
+              <a href="#">Hướng dẫn thanh toán</a>
+              <a href="#">Câu hỏi thường gặp</a>
+            </div>
+            <div class="mod">
+              <p>Thông tin mua bán</p>
+              <a href="#">Giá nhà đất hiện tại</a>
+              <a href="#">Môi giới bất động sản</a>
+            </div>
+          </div>
+          <div class="rel-app">
+            <div><p>Ứng dụng kết nối</p></div>
+            <div class="logo-apply">
+              <div class="logo-app">
+                <a href="https://www.facebook.com/"
+                  ><img src="../images/600px-Facebook-icon-1.png" alt=""
+                /></a>
+              </div>
+              <div class="logo-app">
+                <a href="https://accounts.google.com/"
+                  ><img src="../images/tải xuống.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../javascript/index.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

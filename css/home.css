@@ -1,0 +1,81 @@
+.t-title h3 {
+  margin: 10px 20px;
+}
+.__mainbody{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.t-title-1 {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.t-title-1 .t-title-2{
+  width: 25%;
+  display: block;
+}
+.t-title-1 .t-title-2 .content1 span:hover {
+  color: rgb(255, 60, 60);
+}
+.t-title-1 .t-title-2 .content1 span {
+  font-weight: bold;
+  color: darkblue;
+}
+.t-title-1 .content1 a{
+  text-decoration: none;
+}
+.content2,
+.content3 span {
+  font-style: italic;
+  font-size: 15px;
+}
+.t-title-2 .hinhanh img {
+  width: 265px;
+  height: 140px;
+  max-width: auto;
+  height: 140px;
+}
+#carouselId {
+  display: flex;
+  justify-content: center;
+}
+#img-duan {
+  width: 1000px;
+  height: 450px;
+  object-fit: cover;
+  background-size: contain;
+}
+.t-title-1 .t-title-2 .hinhanh a {
+  display: inline-block;
+  overflow: hidden;
+}
+.t-title-1 .t-title-2 .hinhanh a img{
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+.t-title-1 .t-title-2:hover img{
+  transform: scale(1.25);
+}
+@media screen and (max-width: 767px) {
+  .t-title-1 {
+    margin: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .t-title-1 .t-title-2{
+    width: 100%;
+    display: block;
+  }
+  .__responsive{
+    text-align: center;
+  }
+  #img-duan{
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+    background-size: contain;
+  }
+}

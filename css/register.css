@@ -1,0 +1,83 @@
+.__register {
+  font-family: sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.register {
+  min-width: 270px;
+  min-height: 350px;
+  padding: 25px;
+  padding-bottom: 15px;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0 15px 20px rgba(150, 150, 150, 0.65);
+}
+.register h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: black;
+  text-align: center;
+}
+.register .box {
+  position: relative;
+}
+.register .box #ip {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid darkblue;
+  outline: none;
+  background-color: transparent;
+}
+.register .box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.register .box input:focus ~ label,
+.register .box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: blue;
+  font-size: 12px;
+}
+.dkh {
+  font-size: 12px;
+  margin-bottom: 15px;
+  display: flex;
+}
+.dkh .__checkbox{
+  padding-top: 2px;
+}
+.submitdk {
+  text-align: center;
+  padding: 10px 0;
+}
+.submitdk input {
+  padding: 8px 16px;
+  margin-top: 0px;
+  border: 2px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.end a {
+  text-decoration: none;
+  color: red;
+}
+.end {
+  text-align: center;
+  margin: 10px 0px 0px;
+}

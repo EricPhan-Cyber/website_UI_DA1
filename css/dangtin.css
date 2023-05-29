@@ -1,0 +1,219 @@
+.__dangtinbds {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+.__tieude h4 {
+  color: red;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.__thongtin {
+  display: block;
+  box-sizing: border-box;
+}
+.__dangtin {
+  display: inline-block;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(250, 250, 250);
+  box-sizing: border-box;
+  box-shadow: 0 15px 20px rgba(100, 100, 100, 0.5);
+}
+.s-but {
+  margin: 6px 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.loaibds {
+  margin: 6px 0px;
+  padding: 6px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.address {
+  margin: 5px 0;
+  padding: 0;
+}
+.add-main {
+  display: flex;
+  justify-content: space-between;
+}
+.add {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 10px;
+  padding: 0;
+}
+.add1 {
+  text-align: left;
+}
+input[type="text"]:hover {
+  border-color: blue;
+  outline-color: none;
+}
+textarea:hover {
+  border-color: blue;
+}
+input[type="text"]:focus,
+textarea:focus {
+  border-color: red;
+  outline: none;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 10px;
+}
+.title .title1 label {
+  display: flex;
+  justify-content: flex-start;
+}
+.title .nametitle {
+  margin: 5px 0;
+  margin-bottom: 8px;
+}
+.title .nametitle input {
+  width: 410px;
+}
+.des {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 10px;
+}
+.des .des1 {
+  display: flex;
+  justify-content: start;
+}
+.des .des2 {
+  margin: 5px 0;
+}
+.des .des2 textarea {
+  width: 410px;
+  height: 90px;
+  resize: none;
+  overflow: auto;
+}
+.dientich {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding: 0 10px;
+}
+.dientich .dientich2 input {
+  width: 340px;
+}
+.mucgia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding: 0 10px;
+}
+.gia {
+  display: flex;
+  justify-content: space-between;
+}
+.mucgia .gia2 {
+  margin-left: 5px;
+}
+.giayto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.thongtinlh {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 10px;
+  padding: 0;
+}
+.ttlh {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+  padding: 0;
+}
+.ttlh1 {
+  text-align: left;
+}
+.youradd {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+.youradd input {
+  width: 360px;
+}
+.__loaitin ._loaitin {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.__loaitin .__dongia {
+  margin: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+._gia {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+._gia #tinthuong {
+  display: none;
+}
+._gia #tinvip {
+  display: none;
+}
+._ngaydang {
+  margin: 4px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.end {
+  display: block;
+  box-sizing: border-box;
+}
+.end1 {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.end1 input {
+  padding: 8px 30px;
+  margin-top: 0px;
+  border: 2px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.end2 {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.end2 a {
+  color: red;
+  text-decoration: none;
+}

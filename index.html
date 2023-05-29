@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Trang-chu</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- header -->
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand __logo" href="./index.html"
+            ><img src="./images/logo.jpg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html"
+                  ><span class="__title">Trang chủ</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./view/nhadat.html"
+                  ><span class="__title">Nhà đất</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./view/duan.html"
+                  ><span class="__title">Dự án</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./view/kientruc.html"
+                  ><span class="__title">Kiến trúc</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./view/noithat.html"
+                  ><span class="__title">Nội thất</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><span class="__title">Tài khoản</span></a
+                >
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="./view/login.html"
+                    ><span class="__title">Đăng nhập</span></a
+                  >
+                  <a class="dropdown-item" href="./view/register.html"
+                    ><span class="__title">Đăng ký</span></a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./view/dangtin.html"
+                  ><span class="__title">Đăng tin</span></a
+                >
+              </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0" name="search">
+              <input
+                class="form-control me-sm-2"
+                type="text"
+                id="__search"
+                name="__search"
+                placeholder="Tìm kiếm tại đây!"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+                id="__searchbtn"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main -->
+      <div class="container __responsive">
+        <div class="t-title"><h3>Dự án nổi bật</h3></div>
+        <div class="container mt-3 d-flex justify-content-center">
+          <div class="row">
+            <div class="col-md-12">
+              <div
+                id="carouselId"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <img
+                      class="img-fluid"
+                      id="img-duan"
+                      src="./images/home/9.jpg"
+                      alt="First slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>FLC Luxury Resort Quy Nhơn</h3>
+                      <p>Khu 4 Nhơn Lý, Quy Nhơn, Bình Định</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="img-fluid"
+                      id="img-duan"
+                      src="./images/home/10.jpg"
+                      alt="Second slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>FLC Grand Hote Hạ Long</h3>
+                      <p>
+                        Nguyễn Văn Cừ, P.Hồng Hải, TP.Hạ Long, tỉnh Quảng Ninh
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="img-fluid"
+                      id="img-duan"
+                      src="./images/home/11.jpg"
+                      alt="Third slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>FLC Luxury Hotel Samson</h3>
+                      <p>Đường Hồ Xuân Hương, Thị xã Sầm Sơn, Tỉnh Thanh Hóa</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselId"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselId"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="__mainbody">
+          <div class="t-title"><h3>Dành cho bạn</h3></div>
+          <div class="t-title-1">
+            <div class="t-title-2">
+              <div class="hinhanh">
+                <a href="./view/spchitiet.html"
+                  ><img class="img-fluid" src="./images/home/1.jpg" alt=""
+                /></a>
+              </div>
+              <div class="content1">
+                <a href="./view/spchitiet.html"
+                  ><span>Cho thuê căn hộ 3 tầng</span></a
+                >
+              </div>
+              <div class="content2"><span>20 triệu/tháng - 250m²</span></div>
+              <div class="content3"><span>Quận 9, TP Hồ Chí Minh</span></div>
+            </div>
+            <div class="t-title-2">
+              <div class="hinhanh">
+                <a href="#"
+                  ><img class="img-fluid" src="./images/home/2.jpg" alt=""
+                /></a>
+              </div>
+              <div class="content1">
+                <a href="#"><span>Cho thuê căn hộ giá rẻ - mặt tiền</span></a>
+              </div>
+              <div class="content2"><span>18 triệu/tháng - 130m²</span></div>
+              <div class="content3"><span>Quận Hải Châu, TP Đà Nẵng</span></div>
+            </div>
+            <div class="t-title-2">
+              <div class="hinhanh">
+                <a href="#"
+                  ><img class="img-fluid" src="./images/home/3.jpg" alt=""
+                /></a>
+              </div>
+              <div class="content1">
+                <a href="#"><span>Bán căn hộ giá rẻ - vị trí đẹp</span></a>
+              </div>
+              <div class="content2"><span>7 tỷ - 180m²</span></div>
+              <div class="content3"><span>Quận Hải Châu, TP Đà Nẵng</span></div>
+            </div>
+            <div class="t-title-2">
+              <div class="hinhanh">
+                <a href="#"
+                  ><img class="img-fluid" src="./images/home/4.png" alt=""
+                /></a>
+              </div>
+              <div class="content1">
+                <a href="#"><span>Bán căn hộ giá rẻ</span></a>
+              </div>
+              <div class="content2"><span>6.8 tỷ - 130m²</span></div>
+              <div class="content3">
+                <span>Quận Hòa Khánh, TP Đà Nẵng</span>
+              </div>
+            </div>
+          </div>
+          <div class="t-title-1">
+            <div class="t-title-2">
+              <div class="hinhanh">
+                <a href="#"
+                  ><img class="img-fluid" src="./images/home/5.png" alt=""
+                /></a>
+              </div>
+              <div class="content1">
+                <a href="#"><span>Cho thuê căn hộ giá tốt</span></a>
+              </div>
+              <div class="content2"><span>23 triệu/tháng - 170m²</span></div>
+              <div class="content3"><span>Quận 2, TP Hồ Chí Minh</span></div>
+            </div>
+            <div class="t-title-2">
+              <div class="hinhanh">
+                <a href="#"
+                  ><img class="img-fluid" src="./images/home/6.jpg" alt=""
+                /></a>
+              </div>
+              <div class="content1">
+                <a href="#"><span>Bán căn hộ giá rẻ</span></a>
+              </div>
+              <div class="content2"><span>5.5 tỷ - 150m²</span></div>
+              <div class="content3"><span>Quận Hải Châu, TP Đà Nẵng</span></div>
+            </div>
+            <div class="t-title-2">
+              <div class="hinhanh">
+                <a href="#"
+                  ><img class="img-fluid" src="./images/home/7.jpg" alt=""
+                /></a>
+              </div>
+              <div class="content1">
+                <a href="#"><span>Cho thuê căn hộ giá rẻ</span></a>
+              </div>
+              <div class="content2"><span>25 triệu/tháng - 250m²</span></div>
+              <div class="content3">
+                <span>Quận Tân Bình, TP Hồ Chí Minh</span>
+              </div>
+            </div>
+            <div class="t-title-2">
+              <div class="hinhanh">
+                <a href="#"
+                  ><img class="img-fluid" src="./images/home/8.jpg" alt=""
+                /></a>
+              </div>
+              <div class="content1">
+                <a href="#"><span>Cho thuê căn hộ giá rẻ</span></a>
+              </div>
+              <div class="content2"><span>19 triệu/tháng - 250m²</span></div>
+              <div class="content3"><span>Quận 6, TP Hồ Chí Minh</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer-1">
+          <div class="footer-sub"><h5>BATDONGSANVKU</h5></div>
+          <div class="footer-sub"><span>Hotline:</span> (+84) 123456789</div>
+          <div class="footer-sub">
+            <span>Trụ sở chính:</span> P.Hòa Thuận Tây, Q.Hải Châu, TP.Đà Nẵng
+          </div>
+          <div class="footer-sub">
+            <span>Email: </span>
+            <a href="mailto:hoangpd.21it@vku.udn.vn">hoangpd.21it@vku.udn.vn</a>
+          </div>
+          <div class="footer-sub">
+            <span>Bản quyền thuộc &copy; batdongsanvku</span>
+          </div>
+        </div>
+        <div class="footer-2">
+          <div class="footer-3">
+            <div class="mod">
+              <p>Về chúng tôi</p>
+              <a href="#">Giới thiệu</a>
+              <a href="#">Điều khoản sử dụng</a>
+              <a href="#">Liên hệ</a>
+              <a href="#">Quy chế hoạt động</a>
+              <a href="#">Mua hàng an toàn</a>
+            </div>
+            <div class="mod">
+              <p>Hỗ trợ</p>
+              <a href="#">Quảng cáo</a>
+              <a href="#">Tin tức và khuyến mãi</a>
+              <a href="#">Hỗ trợ đăng tin</a>
+              <a href="#">Hướng dẫn thanh toán</a>
+              <a href="#">Câu hỏi thường gặp</a>
+            </div>
+            <div class="mod">
+              <p>Thông tin mua bán</p>
+              <a href="#">Giá nhà đất hiện tại</a>
+              <a href="#">Môi giới bất động sản</a>
+            </div>
+          </div>
+          <div class="rel-app">
+            <div><p>Ứng dụng kết nối</p></div>
+            <div class="logo-apply">
+              <div class="logo-app">
+                <a href="https://www.facebook.com/"
+                  ><img src="./images/600px-Facebook-icon-1.png" alt=""
+                /></a>
+              </div>
+              <div class="logo-app">
+                <a href="https://accounts.google.com/"
+                  ><img src="./images/tải xuống.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./javascript/index.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

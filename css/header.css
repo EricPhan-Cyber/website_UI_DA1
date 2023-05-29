@@ -1,0 +1,15 @@
+.__logo{
+    max-width: 100px;
+    max-height: 30px;
+}
+.__title{
+    font-weight: bold;
+}
+#__hide{
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    list-style: none;
+    background-color: rgb(247, 247, 247);
+}
